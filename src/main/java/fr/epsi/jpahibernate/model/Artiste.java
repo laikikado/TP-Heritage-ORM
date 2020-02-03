@@ -1,15 +1,18 @@
 package fr.epsi.jpahibernate.model;
 
+import java.util.Collection;
+import javax.persistence.OneToMany;
+
 public class Artiste extends CD {
         
     @OneToMany(mappedBy="artiste")
      private Collection<CD> cds ;
 
-    public <any> getCds() {
+    public Collection<CD> getCds() {
         return cds;
     }
 
-    public void setCds(<any> cds) {
+    public void setCds(Collection<CD> cds) {
         this.cds = cds;
     }
     

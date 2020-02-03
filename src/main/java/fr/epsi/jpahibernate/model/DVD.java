@@ -1,5 +1,10 @@
 package fr.epsi.jpahibernate.model;
 
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
 public class DVD extends Article {
     
     @ManyToOne
@@ -27,11 +32,11 @@ public class DVD extends Article {
         this.realisateur = realisateur;
     }
 
-    public <any> getActeurs() {
+    public List<Acteur> getActeurs() {
         return acteurs;
     }
 
-    public void setActeurs(<any> acteurs) {
+    public void setActeurs(List<Acteur> acteurs) {
         this.acteurs = acteurs;
     }
     

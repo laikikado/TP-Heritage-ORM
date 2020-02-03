@@ -1,5 +1,7 @@
 package fr.epsi.jpahibernate.model;
 
+import javax.persistence.ManyToOne;
+
 public class CD extends Article {
     
     @ManyToOne

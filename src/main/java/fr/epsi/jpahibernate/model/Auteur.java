@@ -1,5 +1,11 @@
 package fr.epsi.jpahibernate.model;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
 public class Auteur extends Livre  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
