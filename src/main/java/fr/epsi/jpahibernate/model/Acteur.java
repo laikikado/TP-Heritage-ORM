@@ -15,4 +15,41 @@ public class Acteur extends DVD {
     
     @Column(name = "prenom")
     private int prenom;
+    
+    @ManyToOne
+    private DVD dvd;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public int getNom() {
+        return nom;
+    }
+
+    public void setNom(int nom) {
+        this.nom = nom;
+    }
+
+    public int getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(int prenom) {
+        this.prenom = prenom;
+    }
+
+    public DVD getDvd() {
+        return dvd;
+    }
+
+    public void setDvd(DVD dvd) {
+        this.dvd = dvd;
+    }
+    
+    
 }
