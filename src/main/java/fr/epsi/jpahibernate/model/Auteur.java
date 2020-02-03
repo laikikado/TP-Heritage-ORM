@@ -1,5 +1,5 @@
 package fr.epsi.jpahibernate.model;
 
-public class Auteur {
+public class Auteur extends Livre  {
     
 }

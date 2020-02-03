@@ -1,5 +1,5 @@
 package fr.epsi.jpahibernate.model;
 
-public class CD {
+public class CD extends Article {
     
 }

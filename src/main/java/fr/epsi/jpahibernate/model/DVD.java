@@ -1,5 +1,5 @@
 package fr.epsi.jpahibernate.model;
 
-public class DVD {
+public class DVD extends Article {
     
 }

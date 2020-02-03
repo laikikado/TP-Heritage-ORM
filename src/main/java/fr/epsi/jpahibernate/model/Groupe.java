@@ -1,5 +1,5 @@
 package fr.epsi.jpahibernate.model;
 
-public class Realisateur extends DVD {
+public class Groupe extends CD {
     
 }
