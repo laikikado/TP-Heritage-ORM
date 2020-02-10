@@ -13,10 +13,10 @@ public class Article {
     private long id;
 
     @Column(name = "prix")
-    private int prix;
+    private String prix;
 
     @Column(name = "libelle", unique = true)
-    private int libelle;
+    private String libelle;
 
     @ManyToMany(mappedBy = "articles")
     private List<Commande> commandes;
@@ -29,19 +29,19 @@ public class Article {
         this.id = id;
     }
 
-    public int getPrix() {
+    public String getPrix() {
         return prix;
     }
 
-    public void setPrix(int prix) {
+    public void setPrix(String prix) {
         this.prix = prix;
     }
 
-    public int getLibelle() {
+    public String getLibelle() {
         return libelle;
     }
 
-    public void setLibelle(int libelle) {
+    public void setLibelle(String libelle) {
         this.libelle = libelle;
     }
 

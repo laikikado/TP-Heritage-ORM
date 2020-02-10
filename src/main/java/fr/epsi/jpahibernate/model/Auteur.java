@@ -13,10 +13,10 @@ public class Auteur implements Serializable {
     private long id;
 
     @Column(name = "nom", unique = true)
-    private int nom;
+    private String nom;
     
     @Column(name = "prenom", unique = true)
-    private int prenom;
+    private String prenom;
     
     @ManyToMany(mappedBy = "auteurs")
     private List<Livre> livres;
@@ -29,19 +29,19 @@ public class Auteur implements Serializable {
         this.id = id;
     }
 
-    public int getNom() {
+    public String getNom() {
         return nom;
     }
 
-    public void setNom(int nom) {
+    public void setNom(String nom) {
         this.nom = nom;
     }
 
-    public int getPrenom() {
+    public String getPrenom() {
         return prenom;
     }
 
-    public void setPrenom(int prenom) {
+    public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
 

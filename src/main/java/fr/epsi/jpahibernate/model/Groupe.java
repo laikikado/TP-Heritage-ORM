@@ -2,6 +2,7 @@ package fr.epsi.jpahibernate.model;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.List;
 import javax.persistence.*;
 
 @Entity
@@ -12,13 +13,13 @@ public class Groupe implements Serializable {
     private long id;
 
     @OneToMany
-     private Collection<CD> cds ;
+     private List<CD> cds;
 
-    public Collection<CD> getCds() {
+    public List<CD> getCds() {
         return cds;
     }
 
-    public void setCds(Collection<CD> cds) {
+    public void setCds(List<CD> cds) {
         this.cds = cds;
     }
     

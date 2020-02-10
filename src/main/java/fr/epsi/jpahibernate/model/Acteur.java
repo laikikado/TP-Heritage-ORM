@@ -12,10 +12,10 @@ public class Acteur implements Serializable {
     private long id;
 
     @Column(name = "nom")
-    private int nom;
+    private String nom;
     
     @Column(name = "prenom")
-    private int prenom;
+    private String prenom;
     
     @ManyToMany
     private List<DVD> dvds;
@@ -28,21 +28,13 @@ public class Acteur implements Serializable {
         this.id = id;
     }
 
-    public int getNom() {
-        return nom;
-    }
+    public String getNom() { return nom; }
 
-    public void setNom(int nom) {
-        this.nom = nom;
-    }
+    public void setNom(String nom) { this.nom = nom; }
 
-    public int getPrenom() {
-        return prenom;
-    }
+    public String getPrenom() { return prenom; }
 
-    public void setPrenom(int prenom) {
-        this.prenom = prenom;
-    }
+    public void setPrenom(String prenom) { this.prenom = prenom; }
 
     public List<DVD> getDvds() { return dvds; }
 
