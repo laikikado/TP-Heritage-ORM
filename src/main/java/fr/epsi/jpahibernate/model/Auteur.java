@@ -1,12 +1,13 @@
 package fr.epsi.jpahibernate.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
-public class Auteur extends Livre  {
+@Entity
+@Table(name = "auteur")
+public class Auteur implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -17,8 +18,8 @@ public class Auteur extends Livre  {
     @Column(name = "prenom", unique = true)
     private int prenom;
     
-    @ManyToOne
-    private Livre livre;
+    @ManyToMany(mappedBy = "auteurs")
+    private List<Livre> livres;
 
     public long getId() {
         return id;
@@ -44,12 +45,7 @@ public class Auteur extends Livre  {
         this.prenom = prenom;
     }
 
-    public Livre getLivre() {
-        return livre;
-    }
+    public List<Livre> getLivres() { return livres; }
 
-    public void setLivre(Livre livre) {
-        this.livre = livre;
-    }
-    
+    public void setLivres(List<Livre> livres) { this.livres = livres; }
 }

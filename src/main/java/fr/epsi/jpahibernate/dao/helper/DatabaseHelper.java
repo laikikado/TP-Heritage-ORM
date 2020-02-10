@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class DatabaseHelper {
-	private static final String PERSISTENCE_UNIT_NAME = "quetePU";
+	private static final String PERSISTENCE_UNIT_NAME = "orm-jdbc-quete";
 	
 	private static EntityManagerFactory entityManagerFactory;
 	

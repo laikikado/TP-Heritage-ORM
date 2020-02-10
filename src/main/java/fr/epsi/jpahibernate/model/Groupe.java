@@ -1,11 +1,17 @@
 package fr.epsi.jpahibernate.model;
 
+import java.io.Serializable;
 import java.util.Collection;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
-public class Groupe extends CD {
-    
-    @OneToMany(mappedBy="groupe")
+@Entity
+@Table(name = "groupe")
+public class Groupe implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    @OneToMany
      private Collection<CD> cds ;
 
     public Collection<CD> getCds() {

@@ -1,20 +1,22 @@
 package fr.epsi.jpahibernate.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
-public class DVD extends Article {
+@Entity
+@DiscriminatorValue("DVD")
+public class DVD extends Article implements Serializable {
     
     @ManyToOne
     private Categorie categorie;
     
     @ManyToOne
-    private Realisateur realisateur ;
+    private Realisateur realisateur;
     
-    @OneToMany(mappedBy="dvd")
-    private List<Acteur> acteurs = new ArrayList<>();
+    @ManyToMany(mappedBy = "dvds")
+    private List<Acteur> acteurs;
 
     public Categorie getCategorie() {
         return categorie;

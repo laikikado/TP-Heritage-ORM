@@ -1,12 +1,12 @@
 package fr.epsi.jpahibernate.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
-public class Acteur extends DVD {
+@Entity
+@Table(name = "acteur")
+public class Acteur implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -17,8 +17,8 @@ public class Acteur extends DVD {
     @Column(name = "prenom")
     private int prenom;
     
-    @ManyToOne
-    private DVD dvd;
+    @ManyToMany
+    private List<DVD> dvds;
 
     public long getId() {
         return id;
@@ -44,13 +44,7 @@ public class Acteur extends DVD {
         this.prenom = prenom;
     }
 
-    public DVD getDvd() {
-        return dvd;
-    }
+    public List<DVD> getDvds() { return dvds; }
 
-    public void setDvd(DVD dvd) {
-        this.dvd = dvd;
-    }
-    
-    
+    public void setDvds(List<DVD> dvds) { this.dvds = dvds; }
 }

@@ -1,14 +1,17 @@
 package fr.epsi.jpahibernate.model;
 
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+import java.io.Serializable;
 
-public class CD extends Article {
-    
+@Entity
+@DiscriminatorValue("CD")
+public class CD extends Article implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
     @ManyToOne
     private Artiste artiste;
-    
-    @ManyToOne
-    private Groupe groupe;
     
     @ManyToOne
     private StyleMusical stylemusical;
@@ -19,14 +22,6 @@ public class CD extends Article {
 
     public void setArtiste(Artiste artiste) {
         this.artiste = artiste;
-    }
-
-    public Groupe getGroupe() {
-        return groupe;
-    }
-
-    public void setGroupe(Groupe groupe) {
-        this.groupe = groupe;
     }
 
     public StyleMusical getStylemusical() {

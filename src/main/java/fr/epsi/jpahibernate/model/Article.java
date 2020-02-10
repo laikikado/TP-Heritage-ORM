@@ -1,10 +1,12 @@
 package fr.epsi.jpahibernate.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorValue("Article")
+@Table(name = "article")
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,6 +17,9 @@ public class Article {
 
     @Column(name = "libelle", unique = true)
     private int libelle;
+
+    @ManyToMany(mappedBy = "articles")
+    private List<Commande> commandes;
 
     public long getId() {
         return id;
@@ -39,6 +44,8 @@ public class Article {
     public void setLibelle(int libelle) {
         this.libelle = libelle;
     }
-    
-    
+
+    public List<Commande> getCommandes() { return commandes; }
+
+    public void setCommandes(List<Commande> commandes) { this.commandes = commandes; }
 }

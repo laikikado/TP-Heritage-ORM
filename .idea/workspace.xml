@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3949d33e-9370-4389-9629-a931530ba018" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XbhVPjzajVVYnG6ilqt45KJ2si" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager" selected="Application.Orm-quete">
+    <configuration name="Orm-quete" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="fr.epsi.jpahibernate.App" />
+      <module name="jpahibernate-quete" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="jpahibernate-quete" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Orm-quete" />
+      <item itemvalue="Maven.jpahibernate-quete" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3949d33e-9370-4389-9629-a931530ba018" name="Default Changelist" comment="" />
+      <created>1581320724270</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581320724270</updated>
+      <workItem from="1581320726005" duration="5095000" />
+      <workItem from="1581326142867" duration="3349000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="187" y="93" width="1089" height="774" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581326251113">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="187" y="93" width="1089" height="774" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1463.874@0.0.1463.874" timestamp="1581326251113" />
+    <state x="537" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1581324092984">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="537" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1463.874@0.0.1463.874" timestamp="1581324092984" />
+    <state x="462" y="265" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581326228195">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="462" y="265" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1463.874@0.0.1463.874" timestamp="1581326228195" />
+    <state x="512" y="236" key="FileChooserDialogImpl" timestamp="1581325483069">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="512" y="236" key="FileChooserDialogImpl/0.0.1463.874@0.0.1463.874" timestamp="1581325483069" />
+    <state width="1420" height="215" key="GridCell.Tab.0.bottom" timestamp="1581329015512">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="1420" height="215" key="GridCell.Tab.0.bottom/0.0.1463.874@0.0.1463.874" timestamp="1581329015512" />
+    <state width="1420" height="215" key="GridCell.Tab.0.center" timestamp="1581329015512">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="1420" height="215" key="GridCell.Tab.0.center/0.0.1463.874@0.0.1463.874" timestamp="1581329015512" />
+    <state width="1420" height="215" key="GridCell.Tab.0.left" timestamp="1581329015512">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="1420" height="215" key="GridCell.Tab.0.left/0.0.1463.874@0.0.1463.874" timestamp="1581329015512" />
+    <state width="1420" height="215" key="GridCell.Tab.0.right" timestamp="1581329015512">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="1420" height="215" key="GridCell.Tab.0.right/0.0.1463.874@0.0.1463.874" timestamp="1581329015512" />
+    <state x="241" y="81" key="SettingsEditor" timestamp="1581326198610">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="241" y="81" key="SettingsEditor/0.0.1463.874@0.0.1463.874" timestamp="1581326198610" />
+    <state x="428" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1581326144332">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="428" y="263" key="com.intellij.ide.util.TipDialog/0.0.1463.874@0.0.1463.874" timestamp="1581326144332" />
+  </component>
+</project>

@@ -4,27 +4,29 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
         http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
         
-    <persistence-unit name="quetePU">
-    
-        <class>fr.epsi.stazi.jpahibernate.model.Acteur</class>
-        <class>fr.epsi.stazi.jpahibernate.model.Article</class>
-        <class>fr.epsi.stazi.jpahibernate.model.Auteur</class>
-        <class>fr.epsi.stazi.jpahibernate.model.CD</class>
-        <class>fr.epsi.stazi.jpahibernate.model.Categorie</class>
-        <class>fr.epsi.stazi.jpahibernate.model.Commande</class>
-        <class>fr.epsi.stazi.jpahibernate.model.DVD</class>
-        <class>fr.epsi.stazi.jpahibernate.model.Livre</class>
-        <class>fr.epsi.stazi.jpahibernate.model.Realisateur</class>    
-    </persistence-unit>
-        
+    <persistence-unit name="orm-jdbc-quete">
+        <class>fr.epsi.jpahibernate.model.Acteur</class>
+        <class>fr.epsi.jpahibernate.model.Article</class>
+        <class>fr.epsi.jpahibernate.model.Artiste</class>
+        <class>fr.epsi.jpahibernate.model.Auteur</class>
+        <class>fr.epsi.jpahibernate.model.Categorie</class>
+        <class>fr.epsi.jpahibernate.model.CD</class>
+        <class>fr.epsi.jpahibernate.model.Commande</class>
+        <class>fr.epsi.jpahibernate.model.DVD</class>
+        <class>fr.epsi.jpahibernate.model.Groupe</class>
+        <class>fr.epsi.jpahibernate.model.Livre</class>
+        <class>fr.epsi.jpahibernate.model.Realisateur</class>
+        <class>fr.epsi.jpahibernate.model.StyleMusical</class>
+
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/orm-jdbc-quete" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/orm-jdbc-quete?createDatabaseIfNotExist=true" />
             <property name="javax.persistence.jdbc.user" value="postgres" />
             <property name="javax.persistence.jdbc.password" value="root" />
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <property name="hibernate.show_sql" value="false" />
             <property name="hibernate.format_sql" value="true" />
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
         </properties>
+
     </persistence-unit>
-     
 </persistence>
